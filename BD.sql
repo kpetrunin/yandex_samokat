@@ -13,6 +13,6 @@ SELECT track,
         WHEN cancelled = true THEN '-1'
         WHEN "inDelivery" = true THEN '1'
         ELSE '0'
-    END
+    END AS status
 FROM "Orders";
 
